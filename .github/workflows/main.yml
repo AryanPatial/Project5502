@@ -31,8 +31,8 @@
          - name: Push to Hugging Face Hub
            uses: huggingface/hub-actions/push@main
            with:
-             token: ${{ secrets.HF_TOKEN }}
-             repo_id: Patial31/Project5502
+             hf_token: ${{ secrets.HF_TOKEN }}
+             huggingface_repo: Patial31/Project5502
              repo_type: 'space'
              space_sdk: 'gradio'
              
