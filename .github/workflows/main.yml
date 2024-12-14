@@ -34,5 +34,5 @@
              hf_token: ${{ secrets.HF_TOKEN }}
              huggingface_repo: Patial31/Project5502
              repo_type: 'space'
-             space_sdk: 'gradio'
+             space_sdk: 'gradio' 
              
