@@ -16,7 +16,7 @@
            with:
              python-version: '3.13'  # Or your desired version
          - name: Install dependencies
-           run: pip install -r requirements.txt
+           run: pip install -r requirements/requirements.txt
          - name: Run pytest
            run: pytest tests/  # Run tests in the 'tests' directory
 
@@ -27,9 +27,9 @@
          - name: Checkout repository
            uses: actions/checkout@v4
          - name: Install dependencies
-           run: pip install -r requirements.txt
+           run: pip install -r requirements/requirements.txt
          - name: Push to Hugging Face Hub
-           uses: huggingface/hub-actions/push@main
+           uses: backendcloud/hugging-push@v0.2.3
            with:
              hf_token: ${{ secrets.HF_TOKEN }}
              huggingface_repo: Patial31/Project5502
