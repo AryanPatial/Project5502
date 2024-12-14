@@ -32,5 +32,5 @@
            uses: huggingface/hub-actions/push@main
            with:
              token: ${{ secrets.HF_TOKEN }}
-             repo_id: /
+             repo_id: Patial31/Project5502
              branch: main
