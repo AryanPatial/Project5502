@@ -33,4 +33,6 @@
            with:
              token: ${{ secrets.HF_TOKEN }}
              repo_id: Patial31/Project5502
-             branch: main
+             repo_type: 'space'
+             space_sdk: 'gradio'
+             
